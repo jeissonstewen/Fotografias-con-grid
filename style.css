@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+body{
+    padding: 5px;
+}
+.container {
+    padding: 5px;
+    height: 100%;
+    display: grid;
+    grid-template-areas: "foto1 foto2 foto3 foto3"
+    "foto1 foto4 foto5 foto6"
+    "foto7 foto4 foto8 foto8";
+    grid-template-columns: repeat(4,24%);
+    grid-template-rows: repeat(3,33%);
+    justify-content: center;
+    gap: 5px;
+  }
+.item{
+    border-radius: 10px;
+}
+
+.item-1 { 
+    grid-area: foto1;
+    background-image: url(./images/1.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.item-2 { 
+    grid-area: foto2;
+    background-image: url(./images/2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.item-3 { 
+    grid-area: foto3;
+    background-image: url(./images/3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.item-4 { 
+    grid-area: foto4;
+    background-image: url(./images/4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.item-5 { 
+    grid-area: foto5;
+    background-image: url(./images/5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.item-6 { 
+    grid-area: foto6;
+    background-image: url(./images/6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.item-7 { 
+    grid-area: foto7;
+    background-image: url(./images/7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.item-8 { 
+    grid-area: foto8;
+    background-image: url(./images/8.jpg);
+    background-size: cover;
+    background-position: center;
+}
